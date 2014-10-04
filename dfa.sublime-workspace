@@ -1,0 +1,1141 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rev",
+				"reversed"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"File",
+				"File	File.read(\"..\")"
+			],
+			[
+				"incl",
+				"incl1	include_once …"
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"subdir",
+				"subdir_name"
+			],
+			[
+				"_cuand",
+				"_cuando_3i"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"e",
+				"e1e1e1"
+			],
+			[
+				"inl",
+				"inline-table"
+			],
+			[
+				"backgr-c",
+				"background-color"
+			],
+			[
+				"bac-c",
+				"background-color"
+			],
+			[
+				"back-c",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 912,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "(function() {\n	var app = \n})();",
+			"file": "js/statesController.js",
+			"file_size": 0,
+			"file_write_time": 130565031400000000,
+			"settings":
+			{
+				"buffer_size": 31,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3417,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet ",
+				"Snippet: Object Value JS"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"file new",
+				"File: New View into File"
+			],
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gutter",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"pck install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"duplic",
+				"File: Duplicate"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"new f",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"new if",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"file del",
+				"File: Delete"
+			],
+			[
+				"renm",
+				"File: Rename"
+			],
+			[
+				"new ",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gomezhyuuga/Development/angujarjs/dfa",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js"
+	],
+	"file_history":
+	[
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/index.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/app.js",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Installed Packages/JavaScript Snippets.sublime-package",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/JSnippets",
+		"/Users/gomezhyuuga/Development/html/angujarjs/js/app.js",
+		"/Users/gomezhyuuga/Development/html/angujarjs/index.html",
+		"/Users/gomezhyuuga/Development/html/angujarjs/bower.json",
+		"/Users/gomezhyuuga/Development/html/angujarjs/angular.sublime-project",
+		"/Users/gomezhyuuga/Development/html/angujarjs/js/angular.min.js",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/gomezhyuuga/.zshrc",
+		"/Users/gomezhyuuga/Downloads/ejercicio_renta_autos.sql",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/helpers/estudios_helper.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/estudios_controller.rb",
+		"/Users/gomezhyuuga/Development/vagrant/example/Vagrantfile",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/estudios/_estudios.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/patients_controller.rb",
+		"/Users/gomezhyuuga/.bash_profile",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.demo.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.tommasi.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy/staging.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/routes.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/show.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/_show.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/patient.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/margenesprint.js.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/expediente.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/index.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/_notas-tipo.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/Rakefile",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/estudios/estudios.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/_acuses.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/estudios/estudio.html.erb",
+		"/Users/gomezhyuuga/Development/c/SOLab/lab5/zombie_process.c",
+		"/Users/gomezhyuuga/Development/c/SOLab/lab5/suspended_state.c",
+		"/Users/gomezhyuuga/Development/ruby/ACM/17.09.2014/input_1801.txt",
+		"/Users/gomezhyuuga/Development/ruby/ACM/17.09.2014/1801.rb",
+		"/Users/gomezhyuuga/Development/ruby/ACM/03-09-2014/1177_input.txt",
+		"/Users/gomezhyuuga/Development/ruby/ACM/03-09-2014/1177_group_reverse.rb",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/D67D2B8E-4265-475B-A539-2F98C032128B/mail.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/EE3D3178-2399-42A7-A842-582888C250C8/regUsuario.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/B2CBB66D-6258-4526-81DD-F070329BECB7/inicios.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/D33F568C-1FEE-4AA1-A4AE-E5D649E38619/inicio.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/D4BC7766-3899-4D3A-AE13-5BCF40012532/index.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/E8F84901-5FA1-4EF9-AAC3-70F8E07076D7/funciones.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/15FFADEE-A607-4977-A89D-238C27326543/envios.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/531AFC52-13C1-44BF-9A34-777D51835073/envio.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/FEC99426-346E-4231-A1A2-747F08016DD8/funciones.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/6725885D-86C7-4701-ABFE-346C12968B13/contacto.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/config.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/stylesheets/layout.css",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/distribuidores.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/contacto.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/promociones.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/green.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/producto.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/index.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/historia.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/catalogo.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/head.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/PHPMailer/composer.json",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/PHPMailer/extras/htmlfilter.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/template.html",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/PHPMailer/extras/EasyPeasyICS.php",
+		"/Users/gomezhyuuga/Development/c/SOLab/lab3/exercise1.c",
+		"/Users/gomezhyuuga/Development/rails/ofimed/src/java/KarunaLauncherApp/src/main/java/karuna/app/App.java",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/application.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/boot.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/initializers/globales.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config.ru",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/conf.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/environments/production.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/log/production.log",
+		"/Users/gomezhyuuga/Documents/inputs.txt",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Sistemas Operativos/Labs/Lab2/names",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Sistemas Operativos/Labs/Lab2/countries",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Sistemas Operativos/Labs/Lab2/egrep_test_file.txt",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/unicorn.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/conf_controller.rb",
+		"/Users/gomezhyuuga/Dropbox/Box/クラクス/serials.txt",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/mail.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/stylesheets/skeleton.css",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/back.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/header.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/fonts/FontAwesome.otf",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Sistemas Operativos/Labs/Lab2/names2",
+		"/Users/gomezhyuuga/Development/c/dircount.c",
+		"/Applications/Pages.app/Contents/Resources/Apple.txt",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/utils.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/1F32B620-E850-4F1F-966B-946A38ECC876/layout.css",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/footer.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/catalogo/producto.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/catalogo/index.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/test.php",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/FCD062B8-873D-4103-A94E-4C88FC68C14D/catalogo.php",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/.htaccess",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/039DE955-CC44-417C-89A2-22A4338F9FBF/head.php",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/tarjetaobstetrica.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/src/java/KarunaLauncherApp/src/main/java/karuna/gui/TextObserver.java",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy/production.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/documentos_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/_abrefile.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/_guardaconsentimiento.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/formatopeve.js.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/documento.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/deploy_update.sh",
+		"/Users/gomezhyuuga/Desktop/smtp.txt",
+		"/Users/gomezhyuuga/Development/html/colap_skeleton/stylesheets/base.css",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.base.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.local.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/nginx.example.conf",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/newrelic.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/_notas_edit.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/.gitignore",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/unicorn.tommasi.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/unicorn.base.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/notificaciones/index.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/notificaciones_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/database.yml",
+		"/Users/gomezhyuuga/Development/rails/ofimed/db/seeds.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/initializers/secret_token.rb",
+		"/Applications/MAMP PRO/MAMP PRO.app/Contents/Resources/httpd.conf"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"",
+			"app/",
+			"app/views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"select",
+			"table",
+			"states",
+			"statesCtrl.",
+			"state",
+			"store.",
+			"where",
+			"from",
+			"select",
+			"values",
+			"into",
+			"insert",
+			"table",
+			"database",
+			"create",
+			"renta",
+			"database_host",
+			"attac",
+			"guarda",
+			"patfile",
+			"displayarchivos",
+			"\"lasrows <%=(cuando).strftime('%Y')%> <%=(cua",
+			"lasrows <%=(cuando).strftime('%Y')%> <%=(cua",
+			"9",
+			"1",
+			"sum",
+			"end",
+			"#",
+			"size",
+			"mail(",
+			"mail",
+			"contact",
+			"mail",
+			"mail(",
+			"bxslider",
+			"script",
+			"0",
+			"Accept",
+			"Reject",
+			":from",
+			"from",
+			"def emai",
+			"manda",
+			"confcorr",
+			"background-image",
+			"colap_mark",
+			"toallas",
+			"four",
+			"2",
+			".feature",
+			"#index",
+			"logo",
+			"min-hei",
+			"none",
+			"one",
+			"header-im",
+			"header-image",
+			"banner",
+			"4",
+			"header-image",
+			"sanit",
+			"a href",
+			"destacad",
+			"images",
+			"header-image",
+			".feature",
+			"htmlentities(urlencode($sName))",
+			"htmlentities(urlencode($catName))",
+			"href",
+			"src",
+			"img src",
+			"$val",
+			"htmlentities",
+			"img src",
+			"\n",
+			"por",
+			"img",
+			"tommasi",
+			"geterror",
+			"correo",
+			"mandano",
+			"png",
+			"distribuidores",
+			"jpg",
+			"destacado",
+			"images",
+			"NOMBRE_INSTANCIA",
+			"hosts",
+			"gomezhyuuga",
+			"#contact-info",
+			"offset-b",
+			"id=\"contact",
+			"nice",
+			"nav",
+			"fourteen",
+			"sName",
+			"alt=\"\" width=\"100%\"",
+			"<img src=\"images/producto2.jpg\" class=\"thumbnail\">",
+			"<img src=\"images/producto.jpg\" class=\"thumbnail\">",
+			"100%",
+			"$producto",
+			"producto",
+			"categories",
+			"html",
+			"section",
+			"\"en\"",
+			"en",
+			"100",
+			"<div class=\"four columns\">",
+			"100%",
+			"alt",
+			"thumbnai",
+			"nav",
+			"#logo",
+			"images",
+			"margin-top",
+			"img.",
+			"$('#",
+			"include_tag",
+			"form",
+			"geterrors",
+			"def geterrors",
+			".save",
+			"i)']",
+			"def est",
+			"Fecha del estudio",
+			"cuando",
+			"@"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"nav"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/statesController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2637,
+								2637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1218.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "dfa.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"estudios_h",
+				"app/helpers/estudios_helper.rb"
+			],
+			[
+				"settings.tomm",
+				"config/settings.tommasi.yml"
+			],
+			[
+				"settings.demo",
+				"config/settings.demo.yml"
+			],
+			[
+				"estudios_contr",
+				"app/controllers/estudios_controller.rb"
+			],
+			[
+				"patients",
+				"app/controllers/patients_controller.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"patients/_show",
+				"app/views/patients/_show.html.erb"
+			],
+			[
+				"estudios.html.erb",
+				"app/views/estudios/estudios.html.erb"
+			],
+			[
+				"estudios_help",
+				"app/helpers/estudios_helper.rb"
+			],
+			[
+				"1",
+				"17.09.2014/1801.rb"
+			],
+			[
+				"config",
+				"config.php"
+			],
+			[
+				"contac",
+				"contacto.php"
+			],
+			[
+				"gre",
+				"green.php"
+			],
+			[
+				"promo",
+				"promociones.php"
+			],
+			[
+				"dis",
+				"distribuidores.php"
+			],
+			[
+				"cata",
+				"catalogo.php"
+			],
+			[
+				"his",
+				"historia.php"
+			],
+			[
+				"head",
+				"head.php"
+			],
+			[
+				"prod",
+				"producto.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"stagi",
+				"config/deploy/staging.rb"
+			],
+			[
+				"app.r",
+				"config/application.rb"
+			],
+			[
+				"config.r",
+				"config/boot.rb"
+			],
+			[
+				"production",
+				"config/environments/production.rb"
+			],
+			[
+				"produc.r",
+				"config/deploy/production.rb"
+			],
+			[
+				"countr",
+				"countries"
+			],
+			[
+				"coun",
+				"countries"
+			],
+			[
+				"staging",
+				"config/deploy/staging.rb"
+			],
+			[
+				"produc",
+				"config/deploy/production.rb"
+			],
+			[
+				"pati",
+				"app/models/patient.rb"
+			],
+			[
+				"documentos",
+				"app/controllers/documentos_controller.rb"
+			],
+			[
+				"confcorreo",
+				"app/views/conf/correo.html.erb"
+			],
+			[
+				"confcontro",
+				"app/controllers/conf_controller.rb"
+			],
+			[
+				"sett.y",
+				"config/settings.yml"
+			],
+			[
+				"conf",
+				"app/models/conf.rb"
+			],
+			[
+				"lay",
+				"stylesheets/layout.css"
+			],
+			[
+				"hea",
+				"head.php"
+			],
+			[
+				"mail",
+				"mail.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"catalo",
+				"catalogo.php"
+			],
+			[
+				"ske",
+				"stylesheets/skeleton.css"
+			],
+			[
+				"header.p",
+				"header.php"
+			],
+			[
+				"con",
+				"config.php"
+			],
+			[
+				"catal",
+				"catalogo.php"
+			],
+			[
+				"ine",
+				"index.php"
+			],
+			[
+				"index.",
+				"index.php"
+			],
+			[
+				"skel",
+				"stylesheets/skeleton.css"
+			],
+			[
+				"index.p",
+				"index.php"
+			],
+			[
+				"layo",
+				"stylesheets/layout.css"
+			],
+			[
+				"uti",
+				"utils.php"
+			],
+			[
+				"fote",
+				"footer.php"
+			],
+			[
+				"head.p",
+				"head.php"
+			],
+			[
+				"catalog",
+				"catalogo/producto.php"
+			],
+			[
+				"head.",
+				"head.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"test",
+				"test.php"
+			],
+			[
+				"ca",
+				"catalogo.php"
+			],
+			[
+				"catalogo",
+				"catalogo.php"
+			],
+			[
+				"tommasi",
+				"config/settings.tommasi.yml"
+			],
+			[
+				"estudiocontr",
+				"app/controllers/estudios_controller.rb"
+			],
+			[
+				"conf.rb",
+				"app/models/conf.rb"
+			],
+			[
+				"patien",
+				"app/models/patient.rb"
+			],
+			[
+				"mai",
+				"mail.php"
+			],
+			[
+				"c",
+				"stylesheets/layout.css"
+			],
+			[
+				"promoc",
+				"promociones.php"
+			],
+			[
+				"footer.",
+				"footer.php"
+			],
+			[
+				"settings.base",
+				"config/settings.base.yml"
+			],
+			[
+				"settings.",
+				"config/settings.demo.yml"
+			],
+			[
+				"settings",
+				"config/settings.yml"
+			],
+			[
+				"stag",
+				"config/deploy/staging.rb"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"unicorn.r",
+				"config/unicorn.tommasi.rb"
+			],
+			[
+				"unicorn.",
+				"config/unicorn.rb"
+			],
+			[
+				"config/deploy",
+				"config/deploy/production.rb"
+			],
+			[
+				"mail.p",
+				"mail.php"
+			],
+			[
+				"skele",
+				"stylesheets/skeleton.css"
+			],
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"green",
+				"green.php"
+			],
+			[
+				"histo",
+				"historia.php"
+			],
+			[
+				"mai.",
+				"mail.php"
+			],
+			[
+				"distr",
+				"distribuidores.php"
+			],
+			[
+				"hist",
+				"historia.php"
+			],
+			[
+				"foot",
+				"footer.php"
+			],
+			[
+				"produ",
+				"producto.php"
+			],
+			[
+				"css",
+				"stylesheets/layout.css"
+			],
+			[
+				"light",
+				"lightbox/lightbox.js"
+			],
+			[
+				"main.j",
+				"javascript/main.js"
+			],
+			[
+				"patient.r",
+				"app/models/patient.rb"
+			],
+			[
+				"estudiocontroller",
+				"app/controllers/tipoestudiocatalog_controller.rb"
+			],
+			[
+				"estudio_controller",
+				"app/controllers/estudios_controller.rb"
+			],
+			[
+				"estudiocontro",
+				"app/controllers/estudios_controller.rb"
+			],
+			[
+				"estudio.html.erb",
+				"app/views/estudios/estudio.html.erb"
+			],
+			[
+				"estudio.html",
+				"app/views/estudios/estudios.html.erb"
+			],
+			[
+				"estudios.html",
+				"app/views/estudios/_estudios.html.erb"
+			],
+			[
+				"appli.r",
+				"config/application.rb"
+			],
+			[
+				"deplo.",
+				"config/deploy.rb"
+			],
+			[
+				"deploy",
+				"config/deploy.rb"
+			],
+			[
+				"consultations/add",
+				"app/views/consultations/addnewproc.js.erb"
+			],
+			[
+				"consultatform",
+				"app/views/consultations/_form.html.erb"
+			],
+			[
+				"consultationnew",
+				"app/views/consultations/new.html.erb"
+			],
+			[
+				"appl",
+				"config/application.yml"
+			],
+			[
+				"consultat",
+				"app/controllers/consultations_controller.rb"
+			],
+			[
+				"addnewp",
+				"app/views/consultations/addnewproc.js.erb"
+			],
+			[
+				"mail.",
+				"mail.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 168.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
