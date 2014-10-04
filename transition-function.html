@@ -1,0 +1,24 @@
+<h2>Transition Function</h2>
+
+<div class="alert alert-danger" ng-hide="dfa.states.length && dfa.alphabet.length">
+	<p class="lead text-center">There are no states/alphabet</p>
+</div>
+
+<table class="table table-bordered text-center" ng-show="dfa.states.length && dfa.alphabet.length">
+	<thead>
+		<tr>
+			<th>State</th>
+			<th ng-repeat="symbol in dfa.getSymbols()">
+				{{ symbol }}
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="(state, symbols) in dfa.transition_function">
+			<td> {{ state }} </td>
+			<td ng-repeat="(symbol, target) in symbols track by $id(symbol)">
+				<select ng-model="dfa.transition_function[state][symbol]" ng-options="s.description as s.description for s in dfa.states" class="form-control"></select>
+			</td>
+		</tr>
+	</tbody>
+</table>

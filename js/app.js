@@ -1,120 +1,177 @@
 (function() {
-	var app = angular.module('dfaMachine', []);
+	var app = angular.module('dfaMachine', ['dfa-directives']);
 
-	var buildTransitionFn = function(states, alphabet) {
-		var transitionFn = {};
-		for (var i = 0; i < states.length; i++) {
-			var el = {};
-			transitionFn[states[i].description] = el;
-			for(var j = 0; j < alphabet.length; j++) {
-				el[alphabet[j]] = "";
+	app.controller('dfaController', ["$scope" , function($scope) {
+		// HELPER VARS
+		this.statesCounter = 0;
+
+		// INSTANCE VARS
+		this.alphabet = "";
+		this.initial_state = "";
+		this.states = [];
+		this.accepted_states = [];
+		this.transition_function = {};
+
+
+		// Helper Functions
+		var emptyState, buildAcceptedStates;
+
+		// Machine running vars
+		this.string = "abbb";
+
+		this.current_state = "";
+		this.accepted = false;
+		this.next_symbol_index = 0;
+		this.finished = false;
+
+
+		this.test = function() {
+			this.accepted = this.run();
+			this.finished = true;
+			this.next_symbol_index = this.string.length;
+		}
+		this.testByStep = function() {
+			// Va empezando
+			if (this.next_symbol_index == 0) {
+				this.current_state = this.initial_state;
+			}
+			// Aún no termina de probar todo el string
+			if (this.next_symbol_index < this.string.length) {
+				var symbol = this.string[this.next_symbol_index];
+				this.current_state = this.transition(this.current_state, symbol);
+				this.next_symbol_index++;
+			} else { // Terminó de probar todo el string
+				this.finished = true;
+				this.accepted = ( this.accepted_states.indexOf(this.current_state) >= 0 );
 			}
 		}
-		return transitionFn;
-	}
+		this.restart = function() {
+			this.next_symbol_index = 0;
+			this.accepted = false;
+			this.finished = false;
+			this.current_state = "";
+		}
+		this.run = function() {
+			// this.next_symbol_index = 0;
+			this.current_state = this.initial_state;
+			for (var i = 0; i < this.string.length; i++) {
+				var s = this.string[i]; // obtener el simbolo en la posicion i
+				this.current_state = this.transition(this.current_state, s);
+			}
 
-	app.controller('DFAController', function($scope) {
-		this.string = "abbbb";
-		this.alphabet = "ab";
-		this.states = [
-			{
-				description: "q0",
-				accepted: false
-			},
-			{
-				description: "q1",
-				accepted: true
-			}
-		];
-		this.initialState = 'q0';
-		this.acceptedStates = ['q1'];
-		this.transitionFn = {
-			"q0": {
-				"a": "q0",
-				"b": "q1"
-			},
-			"q1": {
-				"a": "q0",
-				"b": "q1"
-			}
+			// 2) True si lo acepta, false si no
+			return (this.accepted_states.indexOf(this.current_state) >= 0);
+		}
+		this.transition = function(q, s) {
+			// return transitionFn['q1']['b']; //  return q0
+			return this.transition_function[q][s];
 		}
 
+		// Instance Functions
+		this.addState = function() {
+			this.states.push(this.state);
+			this.statesCounter++;
+
+			// Update accepted_states
+			this.accepted_states = buildAcceptedStates(this.states);
+
+			// Update transition_function
+			updateTransitionFunction(this.transition_function, this.getSymbols(), this.state);
+
+			// Empty state
+			this.state = emptyState(this.statesCounter);
+		};
+
+		this.removeState = function(index) {
+			var deleted = this.states.splice(index, 1)[0];
+			this.statesCounter--;
+			this.state = emptyState(this.statesCounter);
+
+			if (this.statesCounter == 0 || deleted.description === this.initial_state) {
+				this.initial_state = "";
+			}
+
+			// Update accepted_states
+			this.accepted_states = buildAcceptedStates(this.states);
+
+			// Update transition_function
+			this.transition_function = buildTransitionFunction(this.states, this.getSymbols());
+		}
 
 		this.getSymbols = function() {
 			return this.alphabet.split('');
-		};
+		}
 
-		this.test = function(w) {
-			/* 0) Validaciones:
-				- Revisar que los caracteres en w estén en el alfabeto
-			*/
-			// 1) Dividir string en caracters
-			// var currentState = initialState;
-			// for (var i = 0; i < w.length; i++) {
-			// 	currentSymbol = w[i]; // obtener el simbolo en la posicion i
-			// 	currentState = transition(currentState, s);
-			// }
+		this.refreshTransitionFunction = function() {
+			this.transition_function = buildTransitionFunction(this.states, this.getSymbols());
+		}
 
-			// // 2) Revisar si el estado final es de aceptacion
-			// return currentState.accepted;
-			// console.log("string: " + this.string);
-			this.testByStep(this.string, false);
-		};
-
-
-		this.testByStep = function(w, step) {
-			/* 0) Validaciones:
-				- Revisar que los caracteres en w estén en el alfabeto
-			*/
-			// 1) Dividir string en caracters
-			this.currentState = this.initialState;
-			for (var i = 0; i < w.length; i++) {
-				var s = w[i]; // obtener el simbolo en la posicion i
-				this.currentState = this.transition(this.currentState, s);
-				if(step) {
-					// detener la ejecucion hasta que el usuario pulse Next
-					
+		// Helper Functions
+		buildAcceptedStates = function(states) {
+			var accepted_states = [];
+			for(var i = 0; i < states.length; i++) {
+				if (states[i].accepted) {
+					accepted_states.push(states[i].description);
 				}
 			}
+			return accepted_states;
+		}
 
-			// 2) Revisar si el estado final es de aceptacion
-			console.log("Estado final: " + this.state);
-
-			// 3) Verificar si state está en acceptedStates
-			var accepted = false;
-			if ( this.acceptedStates.indexOf(this.state) >= 0) {
-				accepted = true;
+		emptyState = function(counter) {
+			return {
+				description: "q" + counter,
+				accepted: false
+			};
+		}
+		var buildTransitionFunction = function(states, symbols) {
+			var transitionFn = {};
+			for (var i = 0; i < states.length; i++) {
+				var el = {};
+				transitionFn[states[i].description] = el;
+				for(var j = 0; j < symbols.length; j++) {
+					el[symbols[j]] = "";
+				}
 			}
-			console.log("Is in the array:  " + accepted);
-			return this.state;
-		};
-
-		this.transition = function(q, s) {
-			// return transitionFn['q1']['b']; //  return q0
-			return this.transitionFn[q][s];
+			return transitionFn;
+		}
+		var updateTransitionFunction = function(transitionFn, symbols, state) {
+			var el = {};
+			for (var i = 0; i < symbols.length; i++) {
+				el[symbols[i]] = "";
+			}
+			transitionFn[state.description] = el;
 		}
 
-		this.log = function() {
-			console.log(angular.toJson(this.transitionFn, true));
+		// Sample initial input
+		this.initialize = function() {
+			this.statesCounter = 2;
+			this.alphabet = "ab";
+			this.initial_state = "q0";
+
+			this.states = [
+				{
+					description: "q0",
+					accepted: false
+				},
+				{
+					description: "q1",
+					accepted: true
+				}
+			];
+			this.transition_function = {
+				"q0": {
+					"a": "q0",
+					"b": "q1"
+				},
+				"q1": {
+					"a": "q0",
+					"b": "q1"
+				}
+			};
 		}
-
-	});
-
-	app.controller('StatesController', function($scope) {
-		this.state = {};
-
-		this.addState = function(states, alphabet) {
-			states.push(this.state);
-			this.state = {};
-			// var a = buildTransitionFn(states, alphabet);
-			// console.log(angular.toJson(a, true));
-		};
-
-		this.removeState = function(states, index, alphabet) {
-			states.splice(index, 1);
-			// transitionFn = buildTransitionFn(states, alphabet);
-			// console.log(angular.toJson(transitionFn, true));
-		};
-	});
+		this.initialize();
+		this.accepted_states = buildAcceptedStates(this.states);
+		this.state = emptyState(this.statesCounter);
+	}]);
 
 })();

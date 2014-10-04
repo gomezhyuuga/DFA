@@ -1,0 +1,42 @@
+<h3>Run machine</h3>
+
+<form class="well well-xs">
+	<div class="form-group">
+		<label>Input:</label>
+		<input type="text" class="form-control" placeholder="Type a word" ng-model="dfa.string">
+	</div>
+
+	<button class="btn btn-primary btn-lg btn-block" type="button" ng-click="dfa.test()">
+		<span class="glyphicon glyphicon-play"></span>
+		Run
+	</button>
+	<button class="btn btn-primary btn-lg btn-block" type="button"
+		ng-click="dfa.testByStep()"
+		ng-hide="dfa.finished">
+		<span class="glyphicon glyphicon-play-circle"></span>
+		Run by step
+	</button>
+	<button class="btn btn-primary btn-lg btn-block" type="button" ng-click="dfa.restart()">
+		<span class="glyphicon glyphicon-repeat"></span>
+		Restart
+	</button>
+
+	<h5>Current state: {{ dfa.current_state }} </h5>
+	<h5>Next symbol_index: {{ dfa.next_symbol_index }} </h5>
+	<h5>Finished: {{ dfa.finished }} </h5>
+</form>
+
+<!-- Feedback message -->
+<div ng-show="dfa.finished">
+	<div class="alert alert-success text-center" ng-show="dfa.accepted">
+		<h4>
+			<span class="glyphicon glyphicon-ok"></span> Input accepted! 
+		</h4>
+	</div>
+
+	<div class="alert alert-danger text-center" ng-hide="dfa.accepted">
+		<h4>
+			<span class="glyphicon glyphicon-ok"></span> Input not accepted! 
+		</h4>
+	</div>
+</div>

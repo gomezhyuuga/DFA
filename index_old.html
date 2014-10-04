@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dfaMachine">
+<head>
+	<meta charset="UTF-8">
+	<title>ITESM CEM | DFA</title>
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+	<section class="container" ng-controller="DFAController as dfa">
+		<h1>DFA Test</h1>
+		<div class="row">
+			<div class="col-md-8">
+				<label for="string">String</label>
+				<input type="text" class="form-control" ng-model="dfa.string">
+				<strong>String: </strong>
+				{{ dfa.string }}
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-primary" ng-click="dfa.test(dfa.string)">
+					<span class="glyphicon glyphicon-play"></span>
+					Test
+				</button>
+				<button class="btn btn-primary">
+					<span class="glyphicon glyphicon-play"></span>
+					Test by step
+				</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Alphabet</h2>
+				<form role="form" class="form-horizontal">
+					<div class="form-group">
+						<div class="col-md-8">
+							<input ng-model="dfa.alphabet" type="text" name="alphabet" class="form-control" placeholder="Alphabet">
+						</div>
+					</div>
+				</form>
+
+				<h2>Initial State</h2>
+				<select ng-model="dfa.initialState" ng-options="state.description as state.description for state in dfa.states" class="form-control"></select>
+			</div>
+			<div class="col-md-4" ng-controller="StatesController as statesCtrl">
+				<h2>States</h2>
+
+				<table class="table table-bordered text-center">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Description</th>
+							<th>Accepted</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="state in dfa.states">
+							<td> {{ $index + 1 }} </td>
+							<td> {{ state.description }} </td>
+							<td>
+								<span class="glyphicon glyphicon-ok" ng-show="state.accepted"></span>
+								<span class="glyphicon glyphicon-remove" ng-hide="state.accepted"></span>
+							</td>
+							<td>
+								<button ng-click="statesCtrl.removeState(dfa.states, $index, dfa.alphabet)" class="btn btn-xs btn-danger">
+									<span class="glyphicon glyphicon-remove"></span>
+									Delete
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2>New State</h3>
+				<form ng-submit="statesCtrl.addState(dfa.states, dfa.alphabet)">
+					<label for="description">Description:</label>
+					<input ng-model="statesCtrl.state.description" type="text" class="form-control" placeholder="Name your state" name="description" id="description"  autocomplete="off">
+					<div class="checkbox">
+						<label for="accepted">
+							<input ng-model="statesCtrl.state.accepted" type="checkbox" id="accepted" name="accepted">
+							Accepted
+						</label>
+						<button type="submit" class="btn btn-success pull-right">
+							<span class="glyphicon glyphicon-plus-sign"></span>
+							Add
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- INSPECTION -->
+			<div class="col-md-4">
+				<h2>DFA Inspection</h2>
+				<strong>Q:</strong> {{ dfa.states }} <br>
+				<strong>&Sigma;: </strong> {{ dfa.alphabet }} <br>
+				<strong>q<sub>0</sub>:</strong> {{ dfa.initialState }} <br>
+				<strong>F:</strong> {{ dfa.acceptedStates }} <br>
+				<strong>Transition:</strong>
+				<pre> {{ dfa.transitionFn | json }} </pre>
+			</div>
+		</div>
+
+		<!-- TRANSITION FUNCTION -->
+		<div class="row">
+			<div class="col-md-8">
+				<h2>Transition Function</h2>
+				<table class="table table-bordered text-center">
+					<thead>
+						<tr>
+							<th>State</th>
+							<th ng-repeat="symbol in dfa.getSymbols()">
+								{{ symbol }}
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="(state, symbols) in dfa.transitionFn">
+							<td> {{ state }} </td>
+							<td ng-repeat="(symbol, target) in symbols track by $id(symbol)">
+								<select ng-model="dfa.transitionFn[state][symbol]" ng-options="s.description as s.description for s in dfa.states" class="form-control"></select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</section>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/app_old.js"></script>
+</body>
+</html>
