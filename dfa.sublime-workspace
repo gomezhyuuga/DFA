@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"trans",
+				"transition_function"
+			],
+			[
+				"cur",
+				"current_state"
+			],
+			[
+				"curr",
+				"current_symbol_index"
+			],
+			[
+				"acce",
+				"accepted"
+			],
+			[
+				"transi",
+				"transition_function"
+			],
+			[
+				"init",
+				"initial_state"
+			],
+			[
+				"states",
+				"statesCounter"
+			],
+			[
+				"coun",
+				"statesCounter"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
 				"rev",
 				"reversed"
 			],
@@ -63,26 +99,15 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 912,
+				"buffer_size": 6837,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "(function() {\n	var app = \n})();",
-			"file": "js/statesController.js",
-			"file_size": 0,
-			"file_write_time": 130565031400000000,
+			"file": "js/joint.shapes.fsa.js",
 			"settings":
 			{
-				"buffer_size": 31,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 3417,
+				"buffer_size": 2631,
 				"line_ending": "Unix"
 			}
 		}
@@ -90,9 +115,25 @@
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 368.0,
+		"height": 163.0,
 		"selected_items":
 		[
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
 			[
 				"package",
 				"Preferences: Browse Packages"
@@ -110,16 +151,8 @@
 				"Snippet: Object Value JS"
 			],
 			[
-				"new file",
-				"File: New File Relative to Current View"
-			],
-			[
 				"project",
 				"Project: Save As"
-			],
-			[
-				"rena",
-				"File: Rename"
 			],
 			[
 				"file new",
@@ -136,10 +169,6 @@
 			[
 				"bash",
 				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"rename",
-				"File: Rename"
 			],
 			[
 				"sql",
@@ -172,10 +201,6 @@
 			[
 				"ren",
 				"File: Rename"
-			],
-			[
-				"new fil",
-				"File: New File Relative to Current View"
 			],
 			[
 				"pack ins",
@@ -248,12 +273,37 @@
 	"expanded_folders":
 	[
 		"/Users/gomezhyuuga/Development/angujarjs/dfa",
-		"/Users/gomezhyuuga/Development/angujarjs/dfa/js"
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/css"
 	],
 	"file_history":
 	[
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/css/joint.css",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/joint.js",
 		"/Users/gomezhyuuga/Development/angujarjs/dfa/index.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/index_old.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/run-controls.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/states-list.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/joint.shapes.devs.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/plugins/sigma.renderers.customShapes.min.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/plugins/sigma.statistics.HITS.min.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/diagram.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/css/app.css",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/diagram.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/directives.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/joint.shapes.fsa.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/dfa.sublime-project",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/transition-function.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/automatas.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/controllers.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/inspection.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/app_old.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/input-data.html",
 		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/app.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/input.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/diagrama.html",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/js/statesController.js",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/bootstrap/fonts/glyphicons-halflings-regular.svg",
+		"/Users/gomezhyuuga/Development/angujarjs/dfa/data.json",
 		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Installed Packages/JavaScript Snippets.sublime-package",
 		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/JSnippets",
 		"/Users/gomezhyuuga/Development/html/angujarjs/js/app.js",
@@ -354,32 +404,7 @@
 		"/Users/gomezhyuuga/Development/html/colap_skeleton/test.php",
 		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/FCD062B8-873D-4103-A94E-4C88FC68C14D/catalogo.php",
 		"/Users/gomezhyuuga/Development/html/colap_skeleton/.htaccess",
-		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/039DE955-CC44-417C-89A2-22A4338F9FBF/head.php",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/tarjetaobstetrica.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/src/java/KarunaLauncherApp/src/main/java/karuna/gui/TextObserver.java",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy/production.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/documentos_controller.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/_abrefile.html.erb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/_guardaconsentimiento.html.erb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/documentos/formatopeve.js.erb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/documento.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/deploy_update.sh",
-		"/Users/gomezhyuuga/Desktop/smtp.txt",
-		"/Users/gomezhyuuga/Development/html/colap_skeleton/stylesheets/base.css",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.base.yml",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/settings.local.yml",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/nginx.example.conf",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/newrelic.yml",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/patients/_notas_edit.html.erb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/.gitignore",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/unicorn.tommasi.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/unicorn.base.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/notificaciones/index.html.erb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/app/controllers/notificaciones_controller.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/database.yml",
-		"/Users/gomezhyuuga/Development/rails/ofimed/db/seeds.rb",
-		"/Users/gomezhyuuga/Development/rails/ofimed/config/initializers/secret_token.rb",
-		"/Applications/MAMP PRO/MAMP PRO.app/Contents/Resources/httpd.conf"
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/039DE955-CC44-417C-89A2-22A4338F9FBF/head.php"
 	],
 	"find":
 	{
@@ -401,6 +426,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"halo",
+			"source",
+			"dfa.states[i]",
+			"var",
+			"state(",
+			"statesCounter",
+			"current_symbol_index",
+			"dfa.finished",
+			"finished",
+			"tested",
+			"currentState",
+			"w",
+			"buildTrans",
+			"alphabet",
+			"dfa",
+			"this.",
+			"dfa.state.",
+			"lg",
+			"md",
+			"states",
+			"statesCtrl",
+			"accepted",
+			"accpeted",
+			"dfaMachine",
+			"dfaDirectives",
+			"dfaControllers",
+			"ng-",
+			"description",
 			"select",
 			"table",
 			"states",
@@ -500,35 +553,7 @@
 			"alt=\"\" width=\"100%\"",
 			"<img src=\"images/producto2.jpg\" class=\"thumbnail\">",
 			"<img src=\"images/producto.jpg\" class=\"thumbnail\">",
-			"100%",
-			"$producto",
-			"producto",
-			"categories",
-			"html",
-			"section",
-			"\"en\"",
-			"en",
-			"100",
-			"<div class=\"four columns\">",
-			"100%",
-			"alt",
-			"thumbnai",
-			"nav",
-			"#logo",
-			"images",
-			"margin-top",
-			"img.",
-			"$('#",
-			"include_tag",
-			"form",
-			"geterrors",
-			"def geterrors",
-			".save",
-			"i)']",
-			"def est",
-			"Fecha del estudio",
-			"cuando",
-			"@"
+			"100%"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -556,15 +581,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 912,
+						"buffer_size": 6837,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								592,
-								592
+								1529,
+								1529
 							]
 						],
 						"settings":
@@ -573,7 +598,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 517.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -581,60 +606,32 @@
 				},
 				{
 					"buffer": 1,
-					"file": "js/statesController.js",
+					"file": "js/joint.shapes.fsa.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31,
+						"buffer_size": 2631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								25,
-								25
+								1961,
+								1961
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 759.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2637,
-								2637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1218.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -690,6 +687,94 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"joint.cs",
+				"css/joint.css"
+			],
+			[
+				"joint.j",
+				"js/joint.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"shapes",
+				"js/joint.shapes.fsa.js"
+			],
+			[
+				"run",
+				"run-controls.html"
+			],
+			[
+				"diagra",
+				"diagram.html"
+			],
+			[
+				"direc",
+				"js/directives.js"
+			],
+			[
+				"inspec",
+				"inspection.html"
+			],
+			[
+				"transio",
+				"transition-function.html"
+			],
+			[
+				"trans",
+				"transition-function.html"
+			],
+			[
+				"app.j",
+				"js/app.js"
+			],
+			[
+				"input",
+				"input-data.html"
+			],
+			[
+				"state",
+				"states-list.html"
+			],
+			[
+				"tr",
+				"transition-function.html"
+			],
+			[
+				"states",
+				"states-list.html"
+			],
+			[
+				"input-da",
+				"input-data.html"
+			],
+			[
+				"input-data",
+				"input-data.html"
+			],
+			[
+				"inde",
+				"index_old.html"
+			],
+			[
+				"idnex_old",
+				"index_old.html"
+			],
+			[
+				"index_o",
+				"index_old.html"
+			],
+			[
+				"fs",
+				"js/joint.shapes.fsa.js"
+			],
+			[
+				"devs",
+				"js/joint.shapes.devs.js"
+			],
 			[
 				"estudios_h",
 				"app/helpers/estudios_helper.rb"
@@ -767,10 +852,6 @@
 				"producto.php"
 			],
 			[
-				"index",
-				"index.php"
-			],
-			[
 				"stagi",
 				"config/deploy/staging.rb"
 			],
@@ -841,10 +922,6 @@
 			[
 				"mail",
 				"mail.php"
-			],
-			[
-				"inde",
-				"index.php"
 			],
 			[
 				"catalo",
@@ -1132,8 +1209,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 168.0,
+	"side_bar_visible": false,
+	"side_bar_width": 184.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

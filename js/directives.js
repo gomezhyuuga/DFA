@@ -1,6 +1,12 @@
 (function() {
 	var app = angular.module('dfa-directives', []);
 
+	app.directive('diagram', function() {
+		return {
+			restrict: 'E',
+			templateUrl: "diagram.html"
+		}
+	});
 	app.directive('statesList', function() {
 		return {
 			restrict: 'E',

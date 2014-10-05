@@ -1,6 +1,103 @@
 (function() {
 	var app = angular.module('dfaMachine', ['dfa-directives']);
 
+	app.controller('diagramController', ["$scope", function($scope) {
+		this.paper_width = 900;
+		this.paper_height = 400;
+
+		this.graph = new joint.dia.Graph;
+
+		this.paper = new joint.dia.Paper({
+		    el: $('#diagram'),
+		    width: this.paper_width,
+		    height: this.paper_height,
+		    gridSize: 1,
+		    model: this.graph
+		});
+
+		this.create = function(dfa) {
+			var cells = {};
+			var links = [];
+			// 1) Crear un círculo por cada estado
+			for (var i = 0; i < dfa.states.length; i++) {
+				console.log("Creating state");
+				var s = dfa.states[i];
+				var cell = this.state(
+					getRandomInt(70, this.paper_width-100),
+					getRandomInt(70, this.paper_height-100),
+					s.description,
+					s.accepted);
+				cells[s.description] = cell;
+			}
+			// 2) Crear enlaces
+			for (var q in dfa.transition_function) {
+				for (var s in dfa.transition_function[q]) {
+					console.log(cells[q].get('position').x);
+					var source = cells[q];
+					var target = dfa.transition_function[q][s];
+					// cambiar vertex si self loop
+					var vert = [];
+					if (source === cells[target]) {
+						vert.push({
+							x: cells[q].get('position').x + 80,
+							y: cells[q].get('position').y + 80
+						});
+					}
+					console.log(vert);
+					var l = this.link(source, cells[target], s, vert);
+				}
+			}
+		}
+
+		this.state = function(x, y, label, accepted) {
+		    
+		    var props = {
+		        position: { x: x, y: y },
+		        size: { width: 60, height: 60 },
+		        attrs: { text : { text: label }}
+		    };
+		    var cell;
+		    if (accepted) {
+		    	cell = new joint.shapes.fsa.EndState(props);
+		    } else {
+		    	cell = new joint.shapes.fsa.State(props);
+		    }
+		    
+		    this.graph.addCell(cell);
+		    return cell;
+		};
+
+		this.link = function(source, target, label, vertices) {
+		    var cell = new joint.shapes.fsa.Arrow({
+		        source: { id: source.id },
+		        target: { id: target.id },
+		        labels: [{ position: .5, attrs: { text: { text: label || '', 'font-weight': 'bold' } } }],
+		        vertices: vertices || []
+		    });
+		    // cell.set('router', { name: 'manhattan' });
+		    // cell.set('router', { name: 'metro' });
+		    cell.set('router', { name: 'orthogonal' });
+		    cell.attr({
+		    	'.link-tools': { style: "opacity:0" }
+		    });
+		    this.graph.addCell(cell);
+		    return cell;
+		}
+
+		function getRandomInt(min, max) {
+		  return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		this.paper.on('blank:pointerclick', function(evt, x, y) {
+			console.log($scope.$parent.dfa);
+
+			// console.log(paper);
+			// states.push(state(getRandomInt(5, paper_width-40), getRandomInt(5, paper_height-40), "q0"));
+			// console.log(states);
+		});
+
+	}]);
+
 	app.controller('dfaController', ["$scope" , function($scope) {
 		// HELPER VARS
 		this.statesCounter = 0;
@@ -77,6 +174,8 @@
 
 			// Update transition_function
 			updateTransitionFunction(this.transition_function, this.getSymbols(), this.state);
+
+			// Add the state to the diagram
 
 			// Empty state
 			this.state = emptyState(this.statesCounter);

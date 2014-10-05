@@ -6,7 +6,14 @@
 		<input type="text" class="form-control" placeholder="Type a word" ng-model="dfa.string">
 	</div>
 
-	<button class="btn btn-success btn-lg btn-block" type="button" ng-click="dfa.test()">
+	<button class="btn btn-success btn-lg btn-block" type="button" ng-click="diag.create(dfa)">
+		<span class="glyphicon glyphicon-plus"></span>
+		Create diagram
+	</button>
+
+	<button class="btn btn-success btn-lg btn-block" type="button"
+		ng-click="dfa.test()"
+		ng-hide="dfa.finished">
 		<span class="glyphicon glyphicon-play"></span>
 		Run
 	</button>
@@ -16,7 +23,9 @@
 		<span class="glyphicon glyphicon-play-circle"></span>
 		Run by step
 	</button>
-	<button class="btn btn-danger btn-lg btn-block" type="button" ng-click="dfa.restart()">
+	<button class="btn btn-danger btn-lg btn-block" type="button"
+		ng-click="dfa.restart()"
+		ng-show="dfa.finished">
 		<span class="glyphicon glyphicon-repeat"></span>
 		Restart
 	</button>

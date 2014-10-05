@@ -52,7 +52,7 @@ joint.shapes.fsa.StartState = joint.dia.Element.extend({
 
 joint.shapes.fsa.EndState = joint.dia.Element.extend({
 
-    markup: '<g class="rotatable"><g class="scalable"><circle class="outer"/><circle class="inner"/></g></g>',
+    markup: '<g class="rotatable"><g class="scalable"><circle class="outer"/><circle class="inner"/></g><text/></g>',
 
     defaults: joint.util.deepSupplement({
 
@@ -68,9 +68,11 @@ joint.shapes.fsa.EndState = joint.dia.Element.extend({
 
             '.inner': {
                 transform: 'translate(10, 10)',
-                r: 6,
-                fill: '#000000'
-            }
+                r: 8,
+                fill: 'white',
+                stroke: 'black'
+            },
+            'text': { 'font-size': 14, text: '', 'text-anchor': 'middle', 'ref-x': .5, 'ref-y': .5, ref: '.inner', 'y-alignment': 'middle', fill: 'black', 'font-family': 'Arial, helvetica, sans-serif' }
         }
 
     }, joint.dia.Element.prototype.defaults)

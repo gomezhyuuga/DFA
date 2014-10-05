@@ -5,11 +5,19 @@
 	<title>ITESM CEM | DFA</title>
 
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/joint.css">
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-controller="dfaController as dfa">
 
-	<section class="container">
+	<section class="container" ng-controller="diagramController as diag">
 		<h1>DFA Application</h1>
+
+		<h2>Diagram</h2>
+		<div class="row">
+			<div id="diagram"></div>
+		</div>
+
 		<div class="row">
 			<div class="col-md-6">
 				<!-- INPUT ALPHABET AND Q0 -->
@@ -32,5 +40,8 @@
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/directives.js"></script>
+	<script src="js/joint.js"></script>
+	<script src="js/joint.shapes.fsa.js"></script>
+	<script src="js/diagram.js"></script>
 </body>
 </html>
