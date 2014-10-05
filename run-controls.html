@@ -1,5 +1,20 @@
 <h3>Run machine</h3>
 
+<!-- Feedback message -->
+<div ng-show="dfa.finished">
+	<div class="alert alert-success text-center" ng-show="dfa.accepted">
+		<h4>
+			<span class="glyphicon glyphicon-ok"></span> Input accepted! 
+		</h4>
+	</div>
+
+	<div class="alert alert-danger text-center" ng-hide="dfa.accepted">
+		<h4>
+			<span class="glyphicon glyphicon-ok"></span> Input not accepted! 
+		</h4>
+	</div>
+</div>
+
 <form class="well well-xs">
 	<div class="form-group">
 		<label>Input:</label>
@@ -34,18 +49,3 @@
 	<h5>Next symbol_index: {{ dfa.next_symbol_index }} </h5>
 	<h5>Finished: {{ dfa.finished }} </h5>
 </form>
-
-<!-- Feedback message -->
-<div ng-show="dfa.finished">
-	<div class="alert alert-success text-center" ng-show="dfa.accepted">
-		<h4>
-			<span class="glyphicon glyphicon-ok"></span> Input accepted! 
-		</h4>
-	</div>
-
-	<div class="alert alert-danger text-center" ng-hide="dfa.accepted">
-		<h4>
-			<span class="glyphicon glyphicon-ok"></span> Input not accepted! 
-		</h4>
-	</div>
-</div>
