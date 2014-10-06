@@ -33,7 +33,7 @@ joint.shapes.fsa.State = joint.shapes.basic.Circle.extend({
 
 joint.shapes.fsa.StartState = joint.dia.Element.extend({
 
-    markup: '<g class="rotatable"><g class="scalable"><circle/></g></g>',
+    markup: '<g class="rotatable"><g class="scalable"><circle/></g><text/></g>',
 
     defaults: joint.util.deepSupplement({
 
@@ -43,8 +43,10 @@ joint.shapes.fsa.StartState = joint.dia.Element.extend({
             circle: {
                 transform: 'translate(10, 10)',
                 r: 10,
-                fill: 'black'
-            }
+                fill: '#e1fde5',
+                stroke: '#3a5641'
+            },
+            'text': { 'font-size': 14, text: '', 'text-anchor': 'middle', 'ref-x': .5, 'ref-y': .5, ref: 'circle', 'y-alignment': 'middle', fill: 'black', 'font-family': 'Arial, helvetica, sans-serif' }
         }
 
     }, joint.dia.Element.prototype.defaults)
@@ -63,14 +65,14 @@ joint.shapes.fsa.EndState = joint.dia.Element.extend({
                 transform: 'translate(10, 10)',
                 r: 10,
                 fill: '#FFFFFF',
-                stroke: 'black'
+                stroke: '#333333'
             },
 
             '.inner': {
                 transform: 'translate(10, 10)',
                 r: 8,
                 fill: 'white',
-                stroke: 'black'
+                stroke: '#333333'
             },
             'text': { 'font-size': 14, text: '', 'text-anchor': 'middle', 'ref-x': .5, 'ref-y': .5, ref: '.inner', 'y-alignment': 'middle', fill: 'black', 'font-family': 'Arial, helvetica, sans-serif' }
         }

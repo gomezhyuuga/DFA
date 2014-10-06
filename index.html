@@ -13,6 +13,10 @@
 	<section class="container" ng-controller="diagramController as diag">
 		<h1>DFA Application</h1>
 		<div class="row">
+			
+			<div class="pull-right col-md-4">
+				<run-controls info="dfa"></run-controls>
+			</div>
 			<div id="diagram"></div>
 		</div>
 
@@ -25,21 +29,21 @@
 				<h2>States</h2>
 				<states-list></states-list>
 
-				<inspection info="dfa"></inspection>
+				<!-- <inspection info="dfa"></inspection> -->
 			</div>
 			<div class="col-md-6">
 				<!-- TEST INPUT -->
-				<run-controls info="dfa"></run-controls>
 				<transition-function info="dfa"></transition-function>
 			</div>
 		</div>
 	</section>
 
 	<script src="js/angular.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/diagram-controller.js"></script>
 	<script src="js/directives.js"></script>
 	<script src="js/joint.js"></script>
 	<script src="js/joint.shapes.fsa.js"></script>
-	<script src="js/diagram.js"></script>
 </body>
 </html>

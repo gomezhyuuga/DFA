@@ -1,4 +1,31 @@
-<h3>Run machine</h3>
+<!-- <h3>Run machine</h3> -->
+<div class="row" ng-show="dfa.current_state">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Current state</h3>
+			</div>
+			<div class="panel-body text-center">
+				<p class="lead" style="margin-bottom: 0">
+					{{ dfa.current_state || "N/A" }}
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Next symbol</h3>
+			</div>
+			<div class="panel-body text-center">
+				<p class="lead" style="margin-bottom: 0">
+					<strong>{{ dfa.next_symbol || "N/A" }}</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Feedback message -->
 <div ng-show="dfa.finished">
@@ -16,6 +43,7 @@
 </div>
 
 <form class="well well-xs">
+	<p class="text-center lead" ng-bind-html="dfa.showInput()"></p>
 	<div class="form-group">
 		<label>Input:</label>
 		<input type="text" class="form-control" placeholder="Type a word" ng-model="dfa.string">
