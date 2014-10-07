@@ -25,7 +25,7 @@ joint.shapes.fsa.State = joint.shapes.basic.Circle.extend({
     defaults: joint.util.deepSupplement({
         type: 'fsa.State',
         attrs: {
-            circle: { 'stroke-width': 3 },
+            circle: { 'stroke-width': 1 },
             text: { 'font-weight': 'bold' }
         }
     }, joint.shapes.basic.Circle.prototype.defaults)

@@ -74,6 +74,12 @@
 		    } else {
 		    	cell = new joint.shapes.fsa.State(props);
 		    }
+
+		    if (start) {
+		    	cell.attr({
+		    		circle: { fill: '#e1fde5', stroke: '#3a5641' }
+		    	});
+		    }
 		    
 		    this.graph.addCell(cell);
 		    return cell;
