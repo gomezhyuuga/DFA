@@ -18,6 +18,11 @@ body {
 .background.extra {
 	padding: 2em 4em;
 }
+tr.titles th {
+	text-align: center;
+	background-color: #636f7a;
+	color: white;
+}
 
 #about-page .mtop {
 	margin-top: 3em;

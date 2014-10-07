@@ -199,7 +199,7 @@
 				}
 			};
 		}
-		this.initialize();
+		// this.initialize();
 		this.accepted_states = buildAcceptedStates(this.states);
 		this.state = emptyState(this.statesCounter);
 	}]);

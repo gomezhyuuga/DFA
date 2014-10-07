@@ -4,9 +4,9 @@
 	<p class="lead text-center">There are no states/alphabet</p>
 </div>
 
-<table class="table table-bordered text-center" ng-show="dfa.states.length && dfa.alphabet.length">
+<table class="table table-bordered table-hover text-center" ng-show="dfa.states.length && dfa.alphabet.length">
 	<thead>
-		<tr>
+		<tr class="titles">
 			<th>State</th>
 			<th ng-repeat="symbol in dfa.getSymbols()">
 				{{ symbol }}
