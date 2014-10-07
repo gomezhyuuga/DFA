@@ -1,6 +1,20 @@
 (function() {
 	var app = angular.module('dfa-directives', []);
 
+	app.directive('navbar', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'navbar.html'
+		}
+	});
+
+	app.directive('footerContent', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'footer.html'
+		}
+	});
+
 	app.directive('diagram', function() {
 		return {
 			restrict: 'E',
