@@ -17,7 +17,7 @@
 		var emptyState, buildAcceptedStates;
 
 		// Machine running vars
-		this.string = "abbb";
+		this.string = "";
 
 		this.current_state = "";
 		this.accepted = false;
@@ -174,6 +174,7 @@
 		// Sample initial input
 		this.initialize = function() {
 			this.statesCounter = 2;
+			this.string = "abbababb";
 			this.alphabet = "ab";
 			this.initial_state = "q0";
 
@@ -198,7 +199,7 @@
 				}
 			};
 		}
-		this.initialize();
+		// this.initialize();
 		this.accepted_states = buildAcceptedStates(this.states);
 		this.state = emptyState(this.statesCounter);
 	}]);
