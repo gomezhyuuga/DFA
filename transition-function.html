@@ -8,16 +8,18 @@
 	<thead>
 		<tr class="titles">
 			<th>State</th>
-			<th ng-repeat="symbol in dfa.getSymbols()">
-				{{ symbol }}
+			<th ng-repeat="s in dfa.getTransitionSymbols()">
+				{{ s }}
 			</th>
+			
 		</tr>
 	</thead>
 	<tbody>
 		<tr ng-repeat="(state, symbols) in dfa.transition_function">
 			<td> {{ state }} </td>
-			<td ng-repeat="(symbol, target) in symbols track by $id(symbol)">
+			<td ng-repeat="symbol in dfa.getTransitionSymbols() track by $id(symbol)">
 				<select ng-model="dfa.transition_function[state][symbol]" ng-options="s.description as s.description for s in dfa.states" class="form-control"></select>
+				
 			</td>
 		</tr>
 	</tbody>

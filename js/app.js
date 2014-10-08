@@ -130,6 +130,16 @@
 		this.nextSymbol = function() {
 			return this.alphabet[this.next_symbol_index];
 		}
+		this.getTransitionSymbols = function() {
+			var symbols = [];
+			for (var state in this.transition_function) {
+				for (var symbol in this.transition_function[state] ) {
+					symbols.push(symbol);
+				}
+				break;
+			}
+			return symbols;
+		}
 
 		this.refreshTransitionFunction = function() {
 			this.transition_function = buildTransitionFunction(this.states, this.getSymbols());
