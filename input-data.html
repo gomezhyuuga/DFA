@@ -1,0 +1,24 @@
+<form class="form-horizontal">
+	<div class="col-md-6">
+		<div class="form-group">
+			<label for="alphabet" class="control-label col-md-4">Alphabet:</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="symbols"
+					ng-model="dfa.alphabet"
+					ng-change="dfa.refreshTransitionFunction()">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="form-group">
+			<label for="initial_state" class="control-label col-md-4">Initial state:</label>
+			<div class="col-md-8">
+				<select id="initial_state" class="form-control"
+					ng-model="dfa.initial_state"
+					ng-options="state.description as state.description for state in dfa.states">
+				</select>
+			</div>
+		</div>
+	</div>
+</form>

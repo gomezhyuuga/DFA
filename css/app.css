@@ -1,0 +1,42 @@
+body {
+	/*background-color: #fff;*/
+	/*background-image: url('../imgs/congruent_outline.png');*/
+	background-image: url('../imgs/congruent_pentagon.png');
+	/*background-image: url('../imgs/geometry2.png');*/
+	/*background-image: url('../imgs/school.png');*/
+	padding-top: 80px;
+}
+
+.background {
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 2px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.background.extra {
+	padding: 2em 4em;
+}
+tr.titles th {
+	text-align: center;
+	background-color: #636f7a;
+	color: white;
+}
+
+#about-page .mtop {
+	margin-top: 3em;
+}
+
+footer {
+	padding-bottom: 2em;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+
+#diagram {
+	width: 700px;
+	height: 400px;
+	margin: 1em 0 2em 2em;
+	background-color: #f0f0f0;
+	border: 1px solid #333;
+}

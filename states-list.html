@@ -1,0 +1,52 @@
+<div class="alert alert-danger" ng-hide="dfa.states.length">
+	<p class="lead text-center">There are no states</p>
+</div>
+
+<table class="table table-bordered table-condensed table-hover text-center" ng-show="dfa.states.length">
+	<thead>
+		<tr class="titles">
+			<th>#</th>
+			<th>Description</th>
+			<th>Accepted</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="state in dfa.states">
+			<td> {{ $index + 1 }} </td>
+			<td> {{ state.description }} </td>
+			<td>
+				<span class="glyphicon glyphicon-ok" ng-show="state.accepted"></span>
+				<span class="glyphicon glyphicon-remove" ng-hide="state.accepted"></span>
+			</td>
+			<td>
+				<button class="btn btn-xs btn-danger" ng-click="dfa.removeState($index)">
+					<span class="glyphicon glyphicon-remove"></span>
+					Delete
+				</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="well well-sm">
+	<h4>New State</h4>
+	<form class="form-inline">
+		<div class="form-group">
+			<label for="description">Description:</label>	
+			<input type="text" class="form-control" placeholder="Name your state" autocomplete="off"
+				ng-model="dfa.state.description">
+		</div>
+		
+		<div class="checkbox">
+			<label for="state[accepted]">
+				<input type="checkbox" ng-model="dfa.state.accepted" id="state[accepted]">
+				Accepted
+			</label>
+		</div>
+		<button type="submit" class="btn btn-success" ng-click="dfa.addState()">
+			<span class="glyphicon glyphicon-plus-sign"></span>
+			Add
+		</button>
+	</form>
+</div>
