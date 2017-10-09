@@ -40,3 +40,7 @@ footer {
 	background-color: #f0f0f0;
 	border: 1px solid #333;
 }
+.current-symbol {
+	font-weight: 900;
+	color: #d62c1a;
+}

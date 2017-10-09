@@ -116,7 +116,7 @@
 			var input = "";
 			for (var i = 0; i < this.string.length; i++) {
 				if ( (i+1) == this.next_symbol_index) {
-					input += "<strong>" + this.string[i] + "</strong>";
+					input += "<strong class='current-symbol'>" + this.string[i] + "</strong>";
 				} else {
 					input += this.string[i];
 				}
